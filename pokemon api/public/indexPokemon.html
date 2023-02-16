@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POKEDEX</title>
+    <title>Sketch</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="pokemonSketch.js" type="text/javascript" defer></script>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+  <body>
+    <h1>Search A Pokemon <br> In our POKEDEX </h1>
+    <form id="content" action="" onsubmit="searchPokemon(event)">
+      <input type="text" name="pokemon" autocomplete="off" class="input" id="search-input">
+      <button type="reset" class="search" id="search-btn"></button>
+    </form>
+    <div data-poke-card class="poke-card">
+      <div class="pokeContainer">
+        <div data-poke-name class="pokeName">POKEDEX</div>
+        
+        <div data-poke-img-container class="img-container none">
+          <img data-poke-img class="poke-img none" />
+        </div>
+        <div data-poke-id class="poke-id none"></div>
+        <div data-poke-types class="poke-types none"></div>
+        <div data-poke-stats class="poke-stats none"></div>
+      </div>
+    </div>
+    
+  </body>
+</html>
